@@ -1,0 +1,228 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.layout-flex {
+  display: flex;
+  flex: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layout-flex.row {
+  flex-direction: row;
+}
+
+.layout-flex.column {
+  flex-direction: column;
+}
+
+.layout-flex.align-center {
+  align-items: center;
+}
+
+.layout-flex.justify-center {
+  justify-content: center;
+}
+
+.layout-flex>.layout-flex-s {
+  flex-shrink: 0;
+}
+
+.layout-flex>.layout-flex-l {
+  flex: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layout-flex>.layout-flex-l.scroll-x {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.layout-flex>.layout-flex-l.scroll-y {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.layout-flex>.layout-flex-l.scroll {
+  overflow: auto;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  visibility: hidden;
+  clear: both;
+}
+
+.of-table-complex {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.of-table-complex * {
+  box-sizing: inherit;
+}
+
+.of-table-complex .keyword-lighten {
+  background: #ff0;
+}
+
+.of-table-complex .table-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.of-table-complex .table-header {
+  padding: 10px 20px;
+  height: 60px;
+  line-height: 40px;
+  color: #fff;
+  background: #0b4785;
+}
+
+.of-table-complex .table-menu {
+  width: 200px;
+}
+
+.of-table-complex .table-menu-title {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px 10px 25px;
+  line-height: 30px;
+  height: 50px;
+  border-bottom: solid 1px #e8e7ec;
+  border-right: solid 1px #e8e7ec;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.of-table-complex .table-menu-title::before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: block;
+  content: "";
+  width: 3px;
+  height: 16px;
+  margin-top: -8px;
+  background: #0b4785;
+}
+
+.of-table-complex .table-menu-content {
+  overflow: auto;
+}
+
+.of-table-complex .table-menu-content ul {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.of-table-complex .table-menu-content ul li {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 30px;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #666;
+  cursor: pointer;
+}
+
+.of-table-complex .table-menu-content ul li:hover {
+  color: #0b4785;
+}
+
+.of-table-complex .table-menu-content ul li.active {
+  color: #0b4785;
+  background: #e5e9f1;
+}
+
+.of-table-complex .table-search {
+  padding: 8px 15px;
+  height: 50px;
+}
+
+.of-table-complex .table-search .left {
+  float: left;
+  margin-right: 10px;
+}
+
+.of-table-complex .table-search .right {
+  float: right;
+  margin-left: 10px;
+}
+
+.of-table-complex .table-search .search-input {
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: block;
+  font-size: 14px;
+  height: 32px;
+  line-height: 30px;
+  outline: none;
+  padding: 0 15px;
+  transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+  width: 200px;
+}
+
+.of-table-complex .table-search .search-input:hover {
+  border-color: #c0c4cc;
+}
+
+.of-table-complex .table-search .search-input:focus {
+  border-color: #0b4785;
+}
+
+.of-table-complex .table-search .search-btn {
+  display: block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: .1s;
+  font-weight: 500;
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.of-table-complex .table-search .search-btn:hover {
+  color: #0b4785;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff;
+}
+
+.of-table-complex .table-search .search-btn:active {
+  border-color: #0b4785;
+}
