@@ -1,21 +1,19 @@
-# demo-wbs
+# VXE-DEMO
 
-> A Vue.js project
+简体中文 | [English](README.en.md)
 
-## Build Setup
+> 老项目中有个 WBS 需求，所以模板是基于 vue-cli2 搭建的，为的是适配老项目的框架，其他版本的可以查看[vxe-table](https://github.com/x-extends/vxe-table)的文档。
 
-``` bash
-# install dependencies
-npm install
+- [项目预览](https://waleychan.github.io/vxe-demo/)
+- 项目截图
+  ![项目截图](https://raw.githubusercontent.com/WaleyChAn/vxe-demo/master/screenshot/demo-1.png)
 
-# serve with hot reload at localhost:8080
-npm run dev
+### 快速使用
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+```shell script
+npm insall
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```shell script
+npm run dev
+```
